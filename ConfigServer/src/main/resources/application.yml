@@ -1,0 +1,18 @@
+server:
+  port: 8666
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/YHSimon/SpringCloud1.git
+          search-paths: config
+          username: YHSimon
+          password: Yh19991206
+      label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
