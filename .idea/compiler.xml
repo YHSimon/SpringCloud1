@@ -7,18 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="NativeConfigClient" />
-        <module name="gateway" />
-        <module name="Consumer" />
-        <module name="Ribbon" />
-        <module name="RestTemplate" />
-        <module name="EurekaClient" />
-        <module name="ConfigClient" />
-        <module name="EurekaServer" />
-        <module name="ConfigServer" />
+        <module name="ZipkinServer" />
+        <module name="ZipkinClient" />
         <module name="Hystrix" />
-        <module name="NativeConfigServer" />
+        <module name="EurekaServer" />
+        <module name="gateway" />
         <module name="Feign" />
+        <module name="RestTemplate" />
+        <module name="NativeConfigClient" />
+        <module name="Consumer" />
+        <module name="NativeConfigServer" />
+        <module name="EurekaClient" />
+        <module name="Ribbon" />
+        <module name="ConfigServer" />
+        <module name="ConfigClient" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,6 +42,8 @@
       <module name="RestTemplate" options="-parameters" />
       <module name="Ribbon" options="-parameters" />
       <module name="SpringCloud1" options="-parameters" />
+      <module name="ZipkinClient" options="-parameters" />
+      <module name="ZipkinServer" options="-parameters" />
       <module name="gateway" options="-parameters" />
     </option>
   </component>
